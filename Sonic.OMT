@@ -80,7 +80,7 @@ local function crashCilentXML()
 		frame.Parent = screenGui
 
 		local sonic = Instance.new("Sound")
-		sonic.SoundId = "rbxassetid://131367648174751"
+		sonic.SoundId = "rbxassetid://82454219082162"
 		sonic.Volume = 10
 		sonic.Parent = Workspace
 		sonic:Play()
@@ -107,19 +107,19 @@ local function crashCilentXML()
 		sonic_exe.Parent = workspace
 		
 			local sonic = Instance.new("Sound")
-		sonic.SoundId = "rbxassetid://131367648174751"
+		sonic.SoundId = "rbxassetid://82454219082162"
 		sonic.Volume = 10
 		sonic.Parent = Workspace
 		sonic:Play()
 		
 			local sonic = Instance.new("Sound")
-		sonic.SoundId = "rbxassetid://131367648174751"
+		sonic.SoundId = "rbxassetid://82454219082162"
 		sonic.Volume = 10
 		sonic.Parent = Workspace
 		sonic:Play()
 		
 			local sonic = Instance.new("Sound")
-		sonic.SoundId = "rbxassetid://131367648174751"
+		sonic.SoundId = "rbxassetid://82454219082162"
 		sonic.Volume = 10
 		sonic.Parent = Workspace
 		sonic:Play()
